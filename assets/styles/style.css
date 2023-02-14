@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@300;400;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+:root {
+    --primary: 'Montserrat', sans-serif;
+    --secondary: 'Ubuntu', sans-serif;
+    --gradient: linear-gradient(172deg, #150F2D 0%, #4C2785 100%);
+    --gradient-btn: linear-gradient(to bottom right, #FD297A, #9424F0);
+    --gradient-btn-reverse: linear-gradient(to bottom right, #9424F0, #FD297A);
+    --primary-color: #4b235f;
+    --secondary-color: #82009c;
+    --deposit: #22CB5C;
+    --withdraw: #DE4839;
+    --balance: #758283;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--primary);
+}
+
+body {
+    background: var(--gradient);
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+
+}
+
+.main {
+    /* width: 100%; */
+    max-width: 1200px;
+    margin: auto;
+    height: 100vh;
+}
+
+#first-section {
+    padding: 30px 0 50px 0;
+    width: 100%;
+}
+
+#second-section {
+    padding-top: 50px;
+    width: 100%;
+}
+
+#third-section {
+    padding-top: 50px;
+    width: 100%;
+
+}
+
+.main-title {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+.main-title .title-span {
+    color: #38CC77;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.card {
+    padding: 20px;
+    color: white;
+    width: 50%;
+    border: none;
+    border-radius: 8px;
+}
+
+.title {
+    padding-bottom: 20px;
+}
+
+.currency {
+    font-family: var(--secondary);
+    font-weight: 500;
+}
+
+#card-1 {
+    background-color: var(--deposit);
+}
+
+#card-2 {
+    background-color: var(--withdraw);
+}
+
+#card-3 {
+    background-color: var(--balance);
+}
+
+
+
+.forms {
+    display: flex;
+    width: 100%;
+    gap: 50px;
+}
+
+.form {
+    padding: 30px 40px 30px 40px;
+    background-color: #5920cb9f;
+    border-radius: 8px;
+    width: 50%;
+}
+
+.form-title {
+    font-size: 40px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+hr {
+    margin-bottom: 30px;
+}
+
+.input-field {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    padding-left: 10px;
+    font-family: var(--secondary);
+}
+
+.btn {
+    padding: 10px 22px 10px 22px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale(0.9);
+    transition: 0.5s;
+}
+
+.btn-deposit {
+    background-color: var(--deposit);
+    color: white;
+}
+
+.btn-withdraw {
+    background-color: var(--withdraw);
+    color: white;
+}
+
+@media only screen and (max-width : 600px) {
+    .main {
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        height: fit-content;
+    }
+
+    #third-section {
+        padding-top: 50px;
+        width: 100%;
+        padding-bottom: 100px;
+    }
+
+    .main-title {
+        color: white;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .forms {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .form {
+        padding: 30px 40px 30px 40px;
+        background-color: #5920cb9f;
+        border-radius: 8px;
+        width: fit-content;
+    }
+
+    .form-title {
+        font-size: 20px;
+        padding-bottom: 10px;
+        color: white;
+    }
+
+}
+
+@media only screen and (min-width: 601px) and (max-width : 1024px) {
+    .main {
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        height: 100vh;
+    }
+
+    .form-title {
+        font-size: 20px;
+        padding-bottom: 10px;
+        color: white;
+    }
+
+    #third-section {
+        padding-top: 50px;
+        width: 100%;
+        padding-bottom: 100px;
+    }
+}

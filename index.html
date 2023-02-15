@@ -1,74 +1,42 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/styles/style.css">
+    <link rel="stylesheet" href="./assets/styles/loginStyle.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
     <title>Document</title>
 </head>
 
 <body>
-    <main class="main" id="main-container">
-        <section id="first-section">
-            <div class="main-title">
-                <h1>Wellcome!! to <span class="title-span">Simple Bank Depositing System</span></h1>
-            </div>
-        </section>
-        <section id="second-section">
-            <div class="cards">
-                <div class="card" id="card-1">
-                    <h1 class="title">
-                        Deposite
-                    </h1>
-                    <h1 class="currency">
-                        $<span id="deposit-amount">0.00</span>
-                    </h1>
-                </div>
-                <div class="card" id="card-2">
-                    <h1 class="title">
-                        Withdraw
-                    </h1>
-                    <h1 class="currency">
-                        $<span id="withdraw-amount">0.00</span>
-                    </h1>
-                </div>
-                <div class="card" id="card-3">
-                    <h1 class="title">
-                        Balance
-                    </h1>
-                    <h1 class="currency">
-                        $<span id="total-balance">0.00</span>
-                    </h1>
-                </div>
-            </div>
-        </section>
-        <section id="third-section">
-            <div class="forms" id="fromCollections">
-                <div class="form" id="form-1">
-                    <h1 class="form-title">Deposit Here</h1>
+    <div class="container">
+        <div class="inner-container">
+            <h1>Simple Bank Depositing System</h1>
+
+            <div class="form-div">
+                <div class="login-form">
+                    <div class="form-title">
+                        <h3>Log in your Account</h3>
+                    </div>
                     <hr>
-                    <input type="text" name="text" id="input-deposit" class="input-field deposit"
-                        placeholder="$ type your amount here"><br>
-                    <button type="submit" class="btn btn-deposit" id="btnDeposit">Deposit</button>
-                </div>
-                <div class="form" id="form-2">
-                    <h1 class="form-title">Withdraw Here</h1>
-                    <hr>
-                    <input type="text" name="text" id="input-withdrow" class="input-field Withdraw"
-                        placeholder="$ type your amount here"><br>
-                    <button type="submit" class="btn btn-withdraw" id="btnWithdraw">Withdraw</button>
+                    <div class="form-input">
+                        <label for="email">Email</label><br>
+                        <input type="email" name="email" id="input-email" placeholder="example@example.com"><br>
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="input-password"
+                            placeholder="example: #f4dD8r45G8d_"><br>
+                        <button type="submit" id="login-btn">Login</button>
+                    </div>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </div>
 
 
     <!-- script -->
-
     <script src="./assets/scripts/function.js"></script>
-    <script src="./assets/scripts/main.js"></script>
+    <script src="./assets/scripts/login.js"></script>
 </body>
 
 </html>

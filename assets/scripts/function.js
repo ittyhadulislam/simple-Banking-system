@@ -7,7 +7,7 @@ function login() {
 
     //check if email and password are valid not not
     if (email === "az.walker30822@gmail.com" && password === "123") {
-        window.location.href = "index.html";
+        window.location.href = "bank.html";
     }
     else {
         alert("Invalid Credentials");
